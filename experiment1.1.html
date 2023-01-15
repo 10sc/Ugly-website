@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The model of flex</title>
+    <style>
+      body {
+        margin: 0px;
+        height: 100vh;
+        background-color: rgba(237, 231, 231, 0.127);
+      }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .Baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .Yinying {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+    </style>
+  </head>
+
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div
+      style="width: 200px; z-index: 1px"
+      class="Baise flex column mg8 Yinying"
+    >
+      <!--头像栏-->
+      <div
+        style="height: 100px; justify-content: center"
+        class="Baise Yinying flex"
+      >
+        <img
+          src="https://img2.baidu.com/it/u=2182786847,628886163&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=557"
+          width="50px"
+          ;height="50px"
+          alt="头像"
+          style="padding: 10px; /* justify-content: center; */"
+        />
+      </div>
+      <!--导航栏-->
+      <div style="height: 50px" class="Baise Yinying mgt8">
+        <p style="color: #45211e">导航:价格很贵</p>
+      </div>
+      <div style="height: 50px" class="Baise Yinying mgt8">
+        <p style="color: #45211e">导航:大小很小</p>
+      </div>
+      <div style="height: 50px" class="Baise Yinying mgt8">
+        <p style="color: #45211e">导航:厚薄很厚</p>
+      </div>
+      <div style="height: 50px" class="Baise Yinying mgt8">
+        <p style="color: #45211e">导航:使用体验很差</p>
+      </div>
+      <div style="height: 50px" class="Baise Yinying mgt8">
+        <p style="color: #45211e">导航:3G</p>
+      </div>
+      <div style="height: 50px" class="Baise Yinying mgt8">
+        <p style="color: #45211e">导航:像素很差</p>
+      </div>
+      <div style="height: 50px" class="Baise Yinying mgt8">
+        <p style="color: #45211e">导航:手机中的极品</p>
+      </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+      <!--头部栏-->
+      <div
+        style="height: 100px;/* width: 100px;z-index: 1px;"
+        class="Baise mgt8 Yinying flex"
+      >
+        <p>三水牌手机</p>
+      </div>
+      <!--内容区-->
+      <div class="flex1 flex">
+        <!-- 左区 -->
+        <div style="flex: 3" clsss=" flex column">
+          <!--数据区-->
+          <div class="flex mgt8 mgr8">
+            <!--数据块-->
+            <div style="height: 100px" class="flex flex1 Baise mgr8 Yinying">
+              大师三水制造
+            </div>
+            <!--数据块-->
+            <div style="height: 100px" class="flex flex1 Baise mgr8 Yinying">
+              用时8年
+            </div>
+            <!--数据块-->
+            <div style="height: 100px" class="flex flex1 Baise mgr8 Yinying">
+              强过8848
+            </div>
+            <!--数据块-->
+            <div style="height: 100px" class="flex flex1 Baise Yinying">
+              适合易受骗人群
+            </div>
+          </div>
+
+          <!--列表区-->
+          <div class="flex column mgt8 mgr8">
+            <!--列表项-->
+            <div style="height: 200px" class="Baise flex column Yinying">
+              <img
+                src="https://nimg.ws.126.net/?url=https://dingyue.ws.126.net/2020/1231/722a095bj00qm7mi7002dd000lq00gap.jpg&thumbnail=650x2147483647&quality=80&type=jpg"
+                width="150px"
+                height="150px"
+                alt="实物"
+              />实物展示
+            </div>
+            <!--列表项-->
+            <div style="height: 200px" class="Baise flex column mgt8 Yinying">
+              <img
+                src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D450%2C600/sign=fdc65bad8735e5dd9079addb43f68bd9/730e0cf3d7ca7bcbb8427cd0bc096b63f624a810.jpg"
+                width="150px"
+                height="150px"
+                alt="实物"
+              />实物展示
+            </div>
+            <!--列表项-->
+            <div style="height: 200px" class="Baise flex column mgt8 Yinying">
+              <img
+                src="https://gss0.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/f2deb48f8c5494ee4cecf12620f5e0fe98257ec7.jpg"
+                width="150px"
+                height="150px"
+                alt="实物"
+              />实物展示
+            </div>
+            <!--列表项-->
+            <div style="height: 200px" class="Baise flex column mgt8 Yinying">
+              <img
+                src="https://gss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/c995d143ad4bd113a0758c6156afa40f4bfb052c.jpg"
+                width="150px"
+                height="150px"
+                alt="实物"
+              />实物展示
+            </div>
+          </div>
+        </div>
+        <!-- 右区 -->
+        <div style="flex: 1" class="flex column">
+          <!--提示区-->
+          <div style="height: 250px" class="Baise mgt8 Yinying">
+            <img
+              src="C:\Users\孙超\Desktop\Screenshot_20230115_113100_edit_605076977106263.jpg"
+              width="75px"
+              height="75px"
+              alt="头像"
+            />大师头像
+          </div>
+          <!--消息区-->
+          <div style="height: 500px" class="Baise mgt8 Yinying">
+            <img
+              src="C:\Users\孙超\Desktop\Screenshot_20230115_113134.jpg"
+              width="75px"
+              height="75px"
+              alt="头像"
+            />大师头像
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
